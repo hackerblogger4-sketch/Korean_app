@@ -117,9 +117,7 @@ const lessons = [
         title: "✅ Nazorat savollari",
         items: [
           "Barcha 14 undoshni bilaman",
-          "5 q
-
-o'shaloq undoshni bilaman",
+          "5 qo'shaloq undoshni bilaman",
           "Barcha unlilarni bilaman",
           "Bo'g'in tuzilishini tushundim",
           "10 ta so'zni o'qiy olaman",
