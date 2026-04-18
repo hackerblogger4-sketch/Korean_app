@@ -867,7 +867,6 @@ const lessons = [
     ],
   },
 ];
-
 function SectionRenderer({ section, color }) {
   if (section.type === "info") {
     return (
@@ -948,9 +947,7 @@ function SectionRenderer({ section, color }) {
       <div style={{ marginBottom: 14 }}>
         <div style={{ fontWeight: 700, color: "#1e293b", marginBottom: 8, fontSize: 14 }}>{section.title}</div>
         {section.items.map((item, i) => (
-          <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 5, background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 7, padding: "6px 12p
-
-x" }}>
+          <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 5, background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 7, padding: "6px 12px" }}>
             <span style={{ color: "#d97706", fontWeight: 700 }}>{i + 1}.</span>
             <span style={{ color: "#374151", fontSize: 13.5 }}>{item}</span>
           </div>
@@ -965,7 +962,6 @@ x" }}>
   }
   return null;
 }
-
 function CheckList({ section, color }) {
   const [checked, setChecked] = useState(section.items.map(() => false));
   const all = checked.every(Boolean);
@@ -985,11 +981,9 @@ function CheckList({ section, color }) {
     </div>
   );
 }
-
 export default function App() {
   const [activeLesson, setActiveLesson] = useState(0);
   const lesson = lessons[activeLesson];
-
   return (
     <div style={{ fontFamily: "'Segoe UI', system-ui, sans-serif", minHeight: "100vh", background: "#f1f5f9", display: "flex" }}>
       {/* Sidebar */}
@@ -1009,7 +1003,6 @@ export default function App() {
           </button>
         ))}
       </div>
-
       {/* Main content */}
       <div style={{ flex: 1, overflowY: "auto" }}>
         {/* Header */}
@@ -1018,24 +1011,19 @@ export default function App() {
           <div style={{ fontSize: 32 }}>{lesson.emoji}</div>
           <div style={{ fontSize: 26, fontWeight: 800, marginTop: 4 }}>{lesson.title}</div>
           <div style={{ fontSize: 16, opacity: 0.85, marginTop: 2 }}>{lesson.subtitle}</div>
-
           {/* Nav dots */}
           <div style={{ display: "flex", gap: 6, marginTop: 16 }}>
             {lessons.map((_, i) => (
               <button key={i} onClick={() => setActiveLesson(i)}
-                style={{ width: i === activeLesson ? 24 : 8, height: 8, borderRadius: 4, background: i === activeLesson ? "#fff" : "rgba(255,255
-
-,255,0.4)", border: "none", cursor: "pointer", padding: 0, transition: "all 0.2s" }} />
+                style={{ width: i === activeLesson ? 24 : 8, height: 8, borderRadius: 4, background: i === activeLesson ? "#fff" : "rgba(255,255,255,0.4)", border: "none", cursor: "pointer", padding: 0, transition: "all 0.2s" }} />
             ))}
           </div>
         </div>
-
         {/* Content */}
         <div style={{ padding: "24px 32px", maxWidth: 800 }}>
           {lesson.sections.map((section, i) => (
             <SectionRenderer key={i} section={section} color={lesson.color} />
           ))}
-
           {/* Nav buttons */}
           <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
             {activeLesson > 0 && (
