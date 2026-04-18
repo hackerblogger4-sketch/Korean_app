@@ -1,4 +1,3 @@
-Islom Akam:
 import { useState } from "react";
 
 const lessons = [
