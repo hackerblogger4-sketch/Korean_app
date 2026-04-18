@@ -982,8 +982,8 @@ function CheckList({ section, color }) {
   );
 }
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false); // 👈 qo‘sh
   const [activeLesson, setActiveLesson] = useState(0);
-  const lesson = lessons[activeLesson];
   return (
     <div style={{ fontFamily: "'Segoe UI', system-ui, sans-serif", minHeight: "100vh", background: "#f1f5f9", display: "flex" }}>
       {/* Sidebar */}
