@@ -242,9 +242,7 @@ const lessons = [
           ["2", "이", "i"],
           ["3", "삼", "sam"],
           ["4", "사", "sa"],
-          ["5", "
-
-오", "o"],
+          ["5", "오", "o"],
           ["6", "육", "yuk"],
           ["7", "칠", "chil"],
           ["8", "팔", "pal"],
@@ -507,9 +505,7 @@ tle: "4. Vaqt ifodalari",
         rows: [
           ["비빔밥", "bibimbap", "Sabzavot va guruch aralashmasi"],
           ["불고기", "bulgogi", "Marinadlangan mol go'shti"],
-          ["삼겹살", "samgyeopsal
-
-", "Cho'chqa qovurg'asi"],
+          ["삼겹살", "samgyeopsal", "Cho'chqa qovurg'asi"],
           ["김치", "kimchi", "Achchiq fermentlangan sabzavot"],
           ["떡볶이", "tteokbokki", "Achchiq guruch pirog"],
           ["라면", "ramyon", "Tez pishiriladigan lapsha"],
@@ -871,9 +867,7 @@ tle: "4. Vaqt ifodalari",
           "Asosiy 500 so'zni bilaman",
           "Grammatika asoslarini bilaman",
           "Tinglab tushunish strategiyasini bilaman",
-          "30 kunlik reja tuzildim",
-
-],
+          "30 kunlik reja tuzildim",],
       },
     ],
   },
