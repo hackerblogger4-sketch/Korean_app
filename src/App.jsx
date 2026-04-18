@@ -986,6 +986,19 @@ export default function App() {
   const [activeLesson, setActiveLesson] = useState(0);
   return (
     <div style={{ fontFamily: "'Segoe UI', system-ui, sans-serif", minHeight: "100vh", background: "#f1f5f9", display: "flex" }}>
+     {/* Sidebar */}
+<div style={{
+  position: "fixed",
+  top: 0,
+  left: 0,
+  height: "100%",
+  width: 220,
+  background: "#0f172a",
+  color: "white",
+  transform: menuOpen ? "translateX(0)" : "translateX(-100%)",
+  transition: "0.3s",
+  zIndex: 50
+}}>
       {/* Sidebar */}
       <div style={{ width: 220, background: "#0f172a", flexShrink: 0, display: "flex", flexDirection: "column", overflowY: "auto" }}>
         <div style={{ padding: "20px 16px 12px", borderBottom: "1px solid #1e293b" }}>
