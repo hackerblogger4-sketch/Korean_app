@@ -987,7 +987,7 @@ export default function App() {
   return (
     <div style={{ fontFamily: "'Segoe UI', system-ui, sans-serif", minHeight: "100vh", background: "#f1f5f9", display: "flex" }}>
       {/* Sidebar */}
-      <div style={{ width: 220, background: "#0f172a", flexShrink: 0, display: "flex", flexDirection: "column", overflowY: "auto" }}>
+      <div style={{ width: 120, background: "#0f172a", flexShrink: 0, display: "flex", flexDirection: "column", overflowY: "auto" }}>
         <div style={{ padding: "20px 16px 12px", borderBottom: "1px solid #1e293b" }}>
           <div style={{ color: "#fff", fontWeight: 800, fontSize: 15 }}>🇰🇷 TOPIK 1</div>
           <div style={{ color: "#94a3b8", fontSize: 11, marginTop: 2 }}>Kores tili darsligi</div>
